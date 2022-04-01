@@ -1,5 +1,5 @@
 """
-Videoboard module
+Fishboard module
 """
 
 __all__ = (
@@ -8,6 +8,7 @@ __all__ = (
     'main',
 )
 __version__ = '0.1.1'
-__author__ = 'Youngwoon Lee'
+__author__ = 'Sam Weitzman'  # Most of the work done by Youngwoon Lee
+
 
 from .__main__ import main

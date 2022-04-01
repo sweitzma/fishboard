@@ -186,13 +186,13 @@ def str2bool(v):
 
 def main():
     parser = argparse.ArgumentParser(
-        prog='videoboard',
+        prog='fishboard',
         description='A simple http server for visualizing videos and images',
         formatter_class=argparse.ArgumentDefaultsHelpFormatter)
     parser.add_argument('--port', type=int, default=8000,
                         help='port number.')
     parser.add_argument('--logdir', type=str, default='.',
-                        help='directory where videoboard '
+                        help='directory where fishboard '
                              'will look for videos and images.')
     parser.add_argument('--height', type=int, default=320,
                         help='maximum height of image/video.')
@@ -223,7 +223,7 @@ def main():
     server = http.server.HTTPServer(('', args.port), RequestHandlerWithArgs)
 
     try:
-        print('Run videoboard server on port %d' % args.port)
+        print('Run fishboard server on port %d' % args.port)
         server.serve_forever()
     except KeyboardInterrupt:
         pass

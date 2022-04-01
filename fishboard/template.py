@@ -6,6 +6,7 @@ header = '''
 <style>
 body {
     font-family: system-ui;
+    background-color: black;
 }
 
 .accordion {
@@ -39,7 +40,6 @@ body {
 
 .panel {
     padding: 0 18px;
-    background-color: white;
     overflow: hidden;
     display: none;
     flex-wrap: wrap;
@@ -51,6 +51,10 @@ body {
     text-align: center;
     font-size: 20px;
     line-height: 1.5;
+}
+
+href {
+    color: #7c8993;
 }
 
 img, video {
