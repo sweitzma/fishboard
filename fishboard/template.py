@@ -10,8 +10,8 @@ body {
 }
 
 .accordion {
-    background-color: #eee;
-    color: #444;
+    background-color: #2c2c2c;
+    color: #bfbfbf;
     cursor: pointer;
     padding: 18px;
     width: 100%;
@@ -23,7 +23,7 @@ body {
 }
 
 .active, .accordion:hover {
-    background-color: #ccc;
+    background-color: #454444
 }
 
 .accordion:after {
@@ -53,7 +53,7 @@ body {
     line-height: 1.5;
 }
 
-href {
+a {
     color: #7c8993;
 }
 

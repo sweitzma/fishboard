@@ -10,7 +10,7 @@ with open(path.join(__PATH__, 'README.md'), encoding='utf-8') as f:
     long_description = f.read()
 
 def get_version():
-    VERSIONFILE = path.join(__PATH__, 'videoboard', '__init__.py')
+    VERSIONFILE = path.join(__PATH__, 'fishboard', '__init__.py')
     with open(VERSIONFILE) as f:
         version_match = re.search(r"^__version__ = ['\"]([^'\"]*)['\"]",
                                   f.read(), re.M)
@@ -19,15 +19,13 @@ def get_version():
     raise RuntimeError("Unable to find __version__ string in %s" % VERSIONFILE)
 
 setup(
-    name='videoboard',
+    name='fishboard',
     version=get_version(),
     license='MIT',
     description='Launch a simple http server for visualizing videos and images',
     long_description=long_description,
     long_description_content_type='text/markdown',
-    url='https://github.com/youngwoon/videoboard',
-    author='Youngwoon Lee',
-    author_email='lywoon89@gmail.com',
+    url='https://github.com/sweitzma/fishboard',
     keywords='http.server video image',
     classifiers=[
         # https://pypi.python.org/pypi?%3Aaction=list_classifiers
@@ -41,7 +39,7 @@ setup(
     install_requires=[],
     python_requires='>=3',
     entry_points={
-        'console_scripts': ['videoboard=videoboard:main'],
+        'console_scripts': ['fishboard=fishboard:main'],
     },
     include_package_data=True,
     zip_safe=False,
